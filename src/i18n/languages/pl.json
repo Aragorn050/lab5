@@ -1,0 +1,47 @@
+{
+  "common": { "playAgain": "Zagraj ponownie", "backToMenu": "Wróć do menu", "hpLabel": "PŻ", "inventoryLabel": "Ekwipunek", "emptyInventory": "pusty" },
+  "welcome": {
+    "title": "Szepcząca Kotlina",
+    "subtitle": "Fantasy paragrafówka",
+    "language": "Język",
+    "theme": "Motyw kolorystyczny",
+    "light": "Jasny",
+    "dark": "Ciemny",
+    "name": "Imię bohatera",
+    "namePlaceholder": "Wpisz imię",
+    "class": "Klasa",
+    "start": "Rozpocznij opowieść",
+    "preview": "Witaj, {playerName}! Klasa: {characterClass}, na start masz {hp} punktów życia."
+  },
+  "classes": { "warrior": "Wojownik", "mage": "Mag", "rogue": "Łotrzyk" },
+  "items": { "potion": "Mikstura leczenia", "dragonCoin": "Smocza moneta" },
+  "status": "{playerName} ({characterClass}): {hp}/{maxHp} PŻ, przedmioty: {itemCount}",
+  "story": {
+    "start": {
+      "text": "Mgła osiada na skraju Szepczącej Kotliny. {playerName}, stoisz tu z {hp} punktami życia i ciężkim woreczkiem wątpliwości. Na północy ziewa jaskinia, a błotnista droga skręca na wschód, ku straganowi oświetlonemu latarnią.",
+      "choices": { "enterCave": "Wejdź do jaskini", "takeRoad": "Idź drogą" }
+    },
+    "road": {
+      "text": "Kupiec macha do ciebie. „{characterClass}, tak? Przyda ci się to, {playerName}. Kosztuje tylko kilka miedziaków”. Podnosi małą czerwoną miksturę.",
+      "choices": { "buyPotion": "Kup miksturę", "ignore": "Kiwnij głową i idź dalej" }
+    },
+    "roadAfter": {
+      "text": "Droga kończy się tam, gdzie się zaczęła: przed jaskinią. Masz przedmiotów: {itemCount} i {hp} punktów życia. Nie ma dokąd iść poza wnętrze.",
+      "choices": { "goCave": "Wejdź do jaskini" }
+    },
+    "cave": {
+      "text": "W mroku błyszczy złoto, a na nim śpi smok wielki jak stodoła. Jego oddech grzechocze monetami. Możesz się przemknąć, {playerName}, albo uderzyć pierwszy.",
+      "choices": { "sneak": "Przemknij obok smoka", "fight": "Zaatakuj smoka" }
+    },
+    "fight": {
+      "text": "Ogon smoka trafia cię w żebra. Zostało ci {hp} z {maxHp} punktów życia, a smok jest już całkiem rozbudzony.",
+      "choices": { "usePotion": "Wypij miksturę leczenia i dobij smoka", "fightOn": "Walcz dalej ze wszystkich sił" }
+    },
+    "victory": {
+      "text": "Wychodzisz z Kotliny ze smoczą monetą w kieszeni i {hp} punktami życia. Mgła rozstępuje się przed tobą. Brawo, {playerName} ({characterClass})."
+    },
+    "defeat": {
+      "text": "Mgła zamyka się wokół ciebie. {playerName}, twoja opowieść kończy się tutaj, z {hp} punktami życia i śmiechem smoka w uszach."
+    }
+  }
+}

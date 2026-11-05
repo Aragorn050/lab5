@@ -1,0 +1,47 @@
+{
+  "common": { "playAgain": "Play again", "backToMenu": "Back to menu", "hpLabel": "HP", "inventoryLabel": "Inventory", "emptyInventory": "empty" },
+  "welcome": {
+    "title": "The Whispering Hollow",
+    "subtitle": "A fantasy paragraph game",
+    "language": "Language",
+    "theme": "Colour theme",
+    "light": "Light",
+    "dark": "Dark",
+    "name": "Your hero's name",
+    "namePlaceholder": "Type a name",
+    "class": "Class",
+    "start": "Begin the tale",
+    "preview": "Hello, {playerName}! A {characterClass} starts with {hp} hit points."
+  },
+  "classes": { "warrior": "Warrior", "mage": "Mage", "rogue": "Rogue" },
+  "items": { "potion": "Healing potion", "dragonCoin": "Dragon coin" },
+  "status": "{playerName} the {characterClass}: {hp}/{maxHp} HP, {itemCount} item(s)",
+  "story": {
+    "start": {
+      "text": "Mist clings to the edge of the Whispering Hollow. {playerName}, you stand with {hp} hit points and a heavy purse of doubt. A cave yawns to the north; a muddy road bends east toward a lantern-lit stall.",
+      "choices": { "enterCave": "Enter the cave", "takeRoad": "Follow the road" }
+    },
+    "road": {
+      "text": "A merchant waves you over. \"A {characterClass}, is it? You will want this, {playerName}. Only a few coppers.\" He holds up a small red potion.",
+      "choices": { "buyPotion": "Buy the potion", "ignore": "Nod politely and walk on" }
+    },
+    "roadAfter": {
+      "text": "The road ends where it began: in front of the cave. You have {itemCount} item(s) and {hp} hit points. There is nowhere left to go but in.",
+      "choices": { "goCave": "Enter the cave" }
+    },
+    "cave": {
+      "text": "Gold glitters in the dark, and on top of it sleeps a dragon the size of a barn. Its breath rattles the coins. You could creep past it, {playerName}, or you could strike first.",
+      "choices": { "sneak": "Creep past the dragon", "fight": "Strike the dragon" }
+    },
+    "fight": {
+      "text": "The dragon's tail catches you in the ribs. You are down to {hp} of {maxHp} hit points, and it is wide awake.",
+      "choices": { "usePotion": "Drink your healing potion and finish it", "fightOn": "Fight on with everything you have" }
+    },
+    "victory": {
+      "text": "You walk out of the Hollow with a dragon coin in your pocket and {hp} hit points left. The mist parts for you. Well done, {playerName} the {characterClass}."
+    },
+    "defeat": {
+      "text": "The mist closes in. {playerName}, your story ends here, with {hp} hit points left and the dragon's laughter in your ears."
+    }
+  }
+}
